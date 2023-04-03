@@ -22,4 +22,4 @@ class ray {
         point3 dir;
 };
 
-#endif
+#endif 
