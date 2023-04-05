@@ -1,0 +1,2 @@
+São pointers com um **contador de referências** associado, quando uma variável do tipo shared_ptr é referenciada dentro de um bloco de código o contador é incrementado, quando o bloco acaba é decrementado.
+Quando o contador chega a 0 o objeto é apagado.

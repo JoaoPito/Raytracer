@@ -13,7 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "The PPM image format.md",
+                "file": "Cap 6/Hittable Objects & List of Hittable Objects.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "19314a3f9abeb26f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Cap 2/The PPM image format.md",
                 "mode": "source",
                 "source": false
               }
@@ -102,21 +114,9 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "fd3cc372674e1237",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cap 6/Hittable Objects & List of Hittable Objects.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
         ],
-        "currentTab": 8
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -182,7 +182,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cap 6/Hittable Objects & List of Hittable Objects.md",
+                "file": "Cap 2/The PPM image format.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -199,7 +199,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Cap 6/Hittable Objects & List of Hittable Objects.md",
+                "file": "Cap 2/The PPM image format.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -222,7 +222,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Cap 6/Hittable Objects & List of Hittable Objects.md"
+                "file": "Cap 2/The PPM image format.md"
               }
             }
           }
@@ -243,23 +243,26 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "fd3cc372674e1237",
+  "active": "19314a3f9abeb26f",
   "lastOpenFiles": [
-    "Cap 6/6.4 - Front Faces vs Back Faces Normal.md",
+    "Cap 2",
+    "Cap 6/shared_ptr.md",
     "Cap 6/Hittable Objects & List of Hittable Objects.md",
-    "Cap 5/Ray-Sphere Intersection.md",
+    "Cap 6/vector.md",
+    "Cap 6/6.4 - Front Faces vs Back Faces Normal.md",
     "Cap 6/Normals.md",
     "Cap 6/6.1 - Shading with surface normals.md",
+    "Pasted image 20230403220039.png",
     "Cap 6/6.2 - Simplifying the Ray-Sphere intersection code.md",
+    "Cap 5/Ray-Sphere Intersection.md",
     "Cap 5",
     "Pasted image 20230403220304.png",
-    "Pasted image 20230403220039.png",
     "Cap 4/Rays.md",
     "Cap 6",
     "Cap 4/4.2 - Sending Rays into the Scene.md",
     "Cap 4",
     "image.ppm",
-    "The PPM image format.md",
+    "Cap 2/The PPM image format.md",
     "Cap 4/Lerp.md"
   ]
 }
