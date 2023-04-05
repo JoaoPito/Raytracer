@@ -78,9 +78,45 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "d3fefaad0aa2641e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Cap 5/Ray-Sphere Intersection.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "49897b000bea71e5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Cap 6/6.4 - Front Faces vs Back Faces Normal.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "fd3cc372674e1237",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Cap 6/Hittable Objects & List of Hittable Objects.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 8
       }
     ],
     "direction": "vertical"
@@ -130,8 +166,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "96cf6acc9fd3b763",
@@ -147,7 +182,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cap 5/Ray-Sphere Intersection.md",
+                "file": "Cap 6/Hittable Objects & List of Hittable Objects.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -164,7 +199,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Cap 5/Ray-Sphere Intersection.md",
+                "file": "Cap 6/Hittable Objects & List of Hittable Objects.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -187,7 +222,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Cap 5/Ray-Sphere Intersection.md"
+                "file": "Cap 6/Hittable Objects & List of Hittable Objects.md"
               }
             }
           }
@@ -208,10 +243,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4dcd85f1d8361423",
+  "active": "fd3cc372674e1237",
   "lastOpenFiles": [
-    "Cap 6/6.1 - Shading with surface normals.md",
+    "Cap 6/6.4 - Front Faces vs Back Faces Normal.md",
+    "Cap 6/Hittable Objects & List of Hittable Objects.md",
     "Cap 5/Ray-Sphere Intersection.md",
+    "Cap 6/Normals.md",
+    "Cap 6/6.1 - Shading with surface normals.md",
     "Cap 6/6.2 - Simplifying the Ray-Sphere intersection code.md",
     "Cap 5",
     "Pasted image 20230403220304.png",
