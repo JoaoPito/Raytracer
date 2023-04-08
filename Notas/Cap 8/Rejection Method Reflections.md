@@ -1,0 +1,1 @@
+The way we implemented this effect is by creating a "virtual" sphere that serves as the range of angles that the ray is going to be scattered, we pick a random point inside this sphere and the bounced ray points to the direction of this random point inside the sphere, with the origin as the hit point.
