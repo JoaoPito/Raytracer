@@ -1,5 +1,4 @@
-// This file defines some utility funcions and constants
-
+// This file defines some utility functions and constants
 #ifndef RTWEEKEND_H
 #define RTWEEKEND_H
 
@@ -9,9 +8,12 @@
 #include <cstdlib>
 
 // Usings
+
 using std::shared_ptr;
 using std::make_shared;
 using std::sqrt;
+
+
 
 // Constants
 
@@ -30,10 +32,7 @@ inline double clamp(double x, double min, double max) {
     return x;
 }
 
-// Common Headers
 
-#include "ray.h"
-#include "vec3.h"
 
 // Random
 inline double random_double() {
@@ -47,5 +46,10 @@ inline double random_double(double min, double max) {
 }
 
 
+
+// Common Headers
+
+#include "ray.h"
+#include "vec3.h"
 
 #endif
