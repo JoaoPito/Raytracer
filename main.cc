@@ -34,7 +34,7 @@ int main() {
 
     // Image setup
     const auto aspect_ratio = 16.0 / 9.0;
-    const int image_width = 400;
+    const int image_width = 800;
     const int image_height = static_cast<int>(image_width / aspect_ratio);
     const int samples_per_pixel = 100;
     const int max_depth = 50; // Max ray bounces
@@ -43,16 +43,17 @@ int main() {
     hittable_list world;
    
     auto material_ground = make_shared<lambertian>(color(0.8, 0.8, 0.0));
-    auto material_center = make_shared<dielectric>(1.5);
-    auto material_left = make_shared<lambertian>(color(0.1, 0.2, 0.5));
-    auto material_right = make_shared<metal>(color(0.8, 0.6, 0.2), 1.0);
+    auto material_center = make_shared<lambertian>(color(0.05, 0.53, 0.94));
+    auto material_left = make_shared<dielectric>(1.5);
+    auto material_right = make_shared<metal>(color(0.53, 0.94, 0.05), 1.0);
+    //auto material_far = make_shared<lambertian>(color(0.94, 0.05, 0.53));
 
     world.add(make_shared<sphere>(point3(0.0, -100.5, -1.0), 100.0, material_ground));
-    world.add(make_shared<sphere>(point3(0.0, 0.0, -1.0),      0.5, material_center));// Bubble
-    world.add(make_shared<sphere>(point3(0.0, 0.0, -1.0),     -0.45, material_center));
-    world.add(make_shared<sphere>(point3(-1.0, 0.0, -1.0),     0.5, material_left)); 
+    world.add(make_shared<sphere>(point3(0.0, 0.0, -1.0),      0.5, material_center));
+    world.add(make_shared<sphere>(point3(-1.0, 0.0, -1.0),     0.5, material_left));// Bubble
+    world.add(make_shared<sphere>(point3(-1.0, 0.0, -1.0),   -0.45, material_left));
     world.add(make_shared<sphere>(point3(1.0, 0.0, -1.0),      0.5, material_right));
-    world.add(make_shared<sphere>(point3(0.0, 0.0, -5.0),      1, material_left));
+    //world.add(make_shared<sphere>(point3(-3.5, 0.0, -4.0),         1, material_far));
 
     // Camera
     camera cam;

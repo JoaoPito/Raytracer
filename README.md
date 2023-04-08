@@ -10,4 +10,4 @@ To generate an image use the comand (On UNIX systems):
 ```
 
 ## Result
-![A sample image from the last version](image.ppm)
+![A sample image from the last version](image.png)
