@@ -8,3 +8,6 @@ To generate an image use the comand (On UNIX systems):
 ```
     ./main > image.ppm
 ```
+
+## Result
+![A sample image from the last version](image.ppm)
