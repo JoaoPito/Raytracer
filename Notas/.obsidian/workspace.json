@@ -4,119 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "edafe94921f3302c",
+        "id": "3e2ac780aac4163c",
         "type": "tabs",
         "children": [
           {
-            "id": "c136977a71a8ffd1",
+            "id": "a28780bcc26dfb18",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cap 6/Hittable Objects & List of Hittable Objects.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "19314a3f9abeb26f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cap 2/The PPM image format.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "eca6458d311aa8da",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cap 4/Rays.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "032cae95268d8b10",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cap 4/Rays.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "304e0688c4f7b8ce",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cap 4/Rays.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b86892c72b507a46",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cap 5/Ray-Sphere Intersection.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "4dcd85f1d8361423",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cap 5/Ray-Sphere Intersection.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "d3fefaad0aa2641e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cap 5/Ray-Sphere Intersection.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "49897b000bea71e5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cap 6/6.4 - Front Faces vs Back Faces Normal.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -166,7 +65,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 204.5
   },
   "right": {
     "id": "96cf6acc9fd3b763",
@@ -243,8 +142,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "19314a3f9abeb26f",
+  "active": "16598437caf7a6bd",
   "lastOpenFiles": [
+    "Cap 7",
     "Cap 2",
     "Cap 6/shared_ptr.md",
     "Cap 6/Hittable Objects & List of Hittable Objects.md",
