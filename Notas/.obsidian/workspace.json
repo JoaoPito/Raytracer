@@ -78,9 +78,33 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "24b44dde5286a23d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Cap 10/Dielectrics.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "94accd8f48b0049d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Cap 10/Snell's Law.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 7
       }
     ],
     "direction": "vertical"
@@ -146,7 +170,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cap 8/Diffuse Materials.md",
+                "file": "Cap 10/Snell's Law.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -163,7 +187,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Cap 8/Diffuse Materials.md",
+                "file": "Cap 10/Snell's Law.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -186,7 +210,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Cap 8/Diffuse Materials.md"
+                "file": "Cap 10/Snell's Law.md"
               }
             }
           }
@@ -207,10 +231,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a0287845a870ebd1",
+  "active": "94accd8f48b0049d",
   "lastOpenFiles": [
-    "Cap 8/Hemisphere Reflections.md",
+    "Cap 10/Dielectrics.md",
+    "Cap 10/Snell's Law.md",
     "Cap 8/Diffuse Materials.md",
+    "Cap 10",
+    "Cap 8/Hemisphere Reflections.md",
     "Cap 8/Rejection Method Reflections.md",
     "Cap 8/Lambertian Reflections.md",
     "Cap 9/Multiple Materials.md",
