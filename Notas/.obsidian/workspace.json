@@ -102,9 +102,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "6ecfb7d0fb5fca5e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Cap 12/Depth of Field.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 7
+        "currentTab": 8
       }
     ],
     "direction": "vertical"
@@ -170,7 +182,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cap 10/Snell's Law.md",
+                "file": "Cap 12/Depth of Field.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -187,7 +199,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Cap 10/Snell's Law.md",
+                "file": "Cap 12/Depth of Field.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -210,7 +222,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Cap 10/Snell's Law.md"
+                "file": "Cap 12/Depth of Field.md"
               }
             }
           }
@@ -231,10 +243,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "94accd8f48b0049d",
+  "active": "16598437caf7a6bd",
   "lastOpenFiles": [
-    "Cap 10/Dielectrics.md",
     "Cap 10/Snell's Law.md",
+    "Cap 12/Depth of Field.md",
+    "Cap 12",
+    "Cap 11",
+    "Cap 10/Dielectrics.md",
     "Cap 8/Diffuse Materials.md",
     "Cap 10",
     "Cap 8/Hemisphere Reflections.md",
@@ -263,7 +278,6 @@
     "Cap 6",
     "Cap 4/4.2 - Sending Rays into the Scene.md",
     "Cap 4",
-    "image.ppm",
     "Cap 4/Lerp.md"
   ]
 }

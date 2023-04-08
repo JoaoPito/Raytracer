@@ -14,7 +14,7 @@ color ray_color(const ray& r, const hittable& world, int depth) {
     // No more light is gathered if pass the ray bounce limit
     if (depth <= 0)
         return color(0,0,0);
-
+ 
     if (world.hit(r, 0.001, infinity, rec)) {
         ray scattered;
         color attenuation;
@@ -27,9 +27,10 @@ color ray_color(const ray& r, const hittable& world, int depth) {
     }
 
     // Background
+    auto bkg_strength = 1.0;
     vec3 unit_direction = unit_vector(r.direction());
     auto t = 0.5*(unit_direction.y() + 1.0);
-    return color(0,0,0);//(1.0-t)*color(1.0,1.0,1.0) + t*color(0.5, 0.7, 1.0); // lerp
+    return bkg_strength * ((1.0-t)*color(1.0,1.0,1.0) + t*color(0.5, 0.7, 1.0)); // lerp
 }
 
 int main() {
@@ -47,19 +48,27 @@ int main() {
 
     // pink: color(0.94, 0.05, 0.53) | blue: color(0.05, 0.53, 0.94) | green: color(0.53, 0.94, 0.05)
     auto material_ground = make_shared<lambertian>(color(0.73, 0.98, 0.25));
-    auto material_center = make_shared<light>(color(0.94, 0.15, 0.63));
-    //auto material_center = make_shared<lambertian>(color(0.94, 0.15, 0.63));
+    auto material_center = make_shared<lambertian>(color(0.94, 0.15, 0.63));
     auto material_left = make_shared<dielectric>(1.5);
     auto material_right = make_shared<metal>(color(0.05, 0.53, 0.94), 0.25);
+    auto material_light = make_shared<light>(color(1, 1, 1), 5);
 
     world.add(make_shared<sphere>(point3(0.0, -100.5, -1.0), 100.0, material_ground));
     world.add(make_shared<sphere>(point3(-0.55, 0.0, -1.0), 0.5, material_center));
-    world.add(make_shared<sphere>(point3(0.0, 0.0, -2.0), 0.45, material_left));
-    world.add(make_shared<sphere>(point3(0.0, 0.0, -2.0), -0.4, material_left));
+    world.add(make_shared<sphere>(point3(-1.55, 0.0, -1.0), 0.45, material_left));
+    world.add(make_shared<sphere>(point3(-1.55, 0.0, -1.0), -0.4, material_left));
     world.add(make_shared<sphere>(point3(0.55, 0.0, -1.0), 0.5, material_right));
+    world.add(make_shared<sphere>(point3(0.0, -0.25, 0.0), 0.25, material_light));
     
     // Camera
-    camera cam(point3(-2,2,1), point3(0,0,-1), vec3(0,1,0), 30.0, aspect_ratio);
+
+    point3 lookfrom(-3,2,2);
+    point3 lookat(-0.55, 0.0, -0.75);
+    vec3 vup(0,1,0);
+    auto dist_to_focus = (lookfrom-lookat).length();
+    auto aperture = 1.0;
+
+    camera cam(lookfrom, lookat, vup, 20.0, aspect_ratio, aperture, dist_to_focus);
 
     // Render
     std::cout << "P3\n" << image_width << ' ' << image_height << "\n255\n";
