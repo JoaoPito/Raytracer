@@ -19,24 +19,26 @@ color ray_color(const ray& r, const hittable& world, int depth) {
         ray scattered;
         color attenuation;
 
+        color emmission = rec.mat_ptr->emmitted();
+
         if (rec.mat_ptr->scatter(r, rec, attenuation, scattered))
             return attenuation * ray_color(scattered, world, depth-1);
-        return color(0,0,0);
+        return emmission;
     }
 
     // Background
     vec3 unit_direction = unit_vector(r.direction());
     auto t = 0.5*(unit_direction.y() + 1.0);
-    return (1.0-t)*color(1.0,1.0,1.0) + t*color(0.5, 0.7, 1.0); // lerp
+    return color(0,0,0);//(1.0-t)*color(1.0,1.0,1.0) + t*color(0.5, 0.7, 1.0); // lerp
 }
 
 int main() {
 
     // Image setup
     const auto aspect_ratio = 16.0 / 9.0;
-    const int image_width = 1280;
+    const int image_width = 400;
     const int image_height = static_cast<int>(image_width / aspect_ratio);
-    const int samples_per_pixel = 150;
+    const int samples_per_pixel = 100;
     const int max_depth = 50; // Max ray bounces
 
     // World
@@ -45,7 +47,8 @@ int main() {
 
     // pink: color(0.94, 0.05, 0.53) | blue: color(0.05, 0.53, 0.94) | green: color(0.53, 0.94, 0.05)
     auto material_ground = make_shared<lambertian>(color(0.73, 0.98, 0.25));
-    auto material_center = make_shared<lambertian>(color(0.94, 0.15, 0.63));
+    auto material_center = make_shared<light>(color(0.94, 0.15, 0.63));
+    //auto material_center = make_shared<lambertian>(color(0.94, 0.15, 0.63));
     auto material_left = make_shared<dielectric>(1.5);
     auto material_right = make_shared<metal>(color(0.05, 0.53, 0.94), 0.25);
 
