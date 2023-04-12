@@ -243,8 +243,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "16598437caf7a6bd",
+  "active": "6ecfb7d0fb5fca5e",
   "lastOpenFiles": [
+    "Cap 7/Antialiasing.md",
     "Cap 10/Snell's Law.md",
     "Cap 12/Depth of Field.md",
     "Cap 12",
@@ -257,7 +258,6 @@
     "Cap 8/Lambertian Reflections.md",
     "Cap 9/Multiple Materials.md",
     "Cap 9/Metals.md",
-    "Cap 7/Antialiasing.md",
     "Cap 6/6.4 - Front Faces vs Back Faces Normal.md",
     "Cap 2/The PPM image format.md",
     "Cap 9",

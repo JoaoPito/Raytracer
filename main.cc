@@ -27,23 +27,13 @@ color ray_color(const ray& r, const hittable& world, int depth) {
     }
 
     // Background
-    auto bkg_strength = 1.0;
+    auto bkg_strength = 0;
     vec3 unit_direction = unit_vector(r.direction());
     auto t = 0.5*(unit_direction.y() + 1.0);
     return bkg_strength * ((1.0-t)*color(1.0,1.0,1.0) + t*color(0.5, 0.7, 1.0)); // lerp
 }
 
-int main() {
-
-    // Image setup
-    const auto aspect_ratio = 16.0 / 9.0;
-    const int image_width = 400;
-    const int image_height = static_cast<int>(image_width / aspect_ratio);
-    const int samples_per_pixel = 100;
-    const int max_depth = 50; // Max ray bounces
-
-    // World
-
+hittable_list create_world() {
     hittable_list world;
 
     // pink: color(0.94, 0.05, 0.53) | blue: color(0.05, 0.53, 0.94) | green: color(0.53, 0.94, 0.05)
@@ -54,19 +44,33 @@ int main() {
     auto material_light = make_shared<light>(color(1, 1, 1), 5);
 
     world.add(make_shared<sphere>(point3(0.0, -100.5, -1.0), 100.0, material_ground));
-    world.add(make_shared<sphere>(point3(-0.55, 0.0, -1.0), 0.5, material_center));
+    world.add(make_shared<sphere>(point3(-0.55, 0.0, -1.2), 0.5, material_center));
     world.add(make_shared<sphere>(point3(-1.55, 0.0, -1.0), 0.45, material_left));
     world.add(make_shared<sphere>(point3(-1.55, 0.0, -1.0), -0.4, material_left));
     world.add(make_shared<sphere>(point3(0.55, 0.0, -1.0), 0.5, material_right));
-    world.add(make_shared<sphere>(point3(0.0, -0.25, 0.0), 0.25, material_light));
+    world.add(make_shared<sphere>(point3(0.0, -0.25, -0.25), 0.25, material_light));
+
+    return world;
+}
+
+int main() {
+
+    // Image setup
+    const auto aspect_ratio = 16.0 / 9.0;
+    const int image_width = 1280;
+    const int image_height = static_cast<int>(image_width / aspect_ratio);
+    const int samples_per_pixel = 500;
+    const int max_depth = 25; // Max ray bounces
+
+    // World
+    auto world = create_world();
     
     // Camera
-
-    point3 lookfrom(-3,2,2);
+    point3 lookfrom(-3,1.5,2);
     point3 lookat(-0.55, 0.0, -0.75);
     vec3 vup(0,1,0);
     auto dist_to_focus = (lookfrom-lookat).length();
-    auto aperture = 1.0;
+    auto aperture = 0.15;
 
     camera cam(lookfrom, lookat, vup, 20.0, aspect_ratio, aperture, dist_to_focus);
 

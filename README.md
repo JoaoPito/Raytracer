@@ -1,6 +1,6 @@
-This is a ray tracer renderer, it's based on the Ray Tracing in One Weekend by Peter Shirley book trilogy ([_Ray Tracing in One Weekend_](https://raytracing.github.io/books/RayTracingInOneWeekend.html)).
+This is a ray tracer renderer, it's based on the book series [_Ray Tracing in One Weekend_](https://raytracing.github.io/books/RayTracingInOneWeekend.html) by Peter Shirley.
 
-It generates a 400x225 .ppm image, configurable on the main.cc file.
+It generates a .ppm image, settings configurable on the main.cc file.
 
 ## Usage
 
