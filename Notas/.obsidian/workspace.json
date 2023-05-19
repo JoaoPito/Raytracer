@@ -8,115 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "a28780bcc26dfb18",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cap 7/Antialiasing.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "243b4c281af2daba",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cap 8/Diffuse Materials.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c6c8727baba28e79",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cap 9/Metals.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "d6b3fcae6de04ccd",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cap 9/Multiple Materials.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "37ee769b2a67ef64",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cap 8/Lambertian Reflections.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "a0287845a870ebd1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cap 8/Diffuse Materials.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "24b44dde5286a23d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cap 10/Dielectrics.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "94accd8f48b0049d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cap 10/Snell's Law.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "6ecfb7d0fb5fca5e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Cap 12/Depth of Field.md",
+                "file": "Part II/Motion Blur.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 8
+        ]
       }
     ],
     "direction": "vertical"
@@ -161,6 +64,14 @@
               "type": "starred",
               "state": {}
             }
+          },
+          {
+            "id": "b26abb2dccbb78be",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
           }
         ]
       }
@@ -182,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Cap 12/Depth of Field.md",
+                "file": "Part II/Motion Blur.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -199,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Cap 12/Depth of Field.md",
+                "file": "Part II/Motion Blur.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -222,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Cap 12/Depth of Field.md"
+                "file": "Part II/Motion Blur.md"
               }
             }
           }
@@ -245,39 +156,43 @@
   },
   "active": "6ecfb7d0fb5fca5e",
   "lastOpenFiles": [
-    "Cap 7/Antialiasing.md",
-    "Cap 10/Snell's Law.md",
+    "Part II/Motion Blur.md",
     "Cap 12/Depth of Field.md",
-    "Cap 12",
-    "Cap 11",
-    "Cap 10/Dielectrics.md",
+    "Part II",
+    "Part I/Cap 12/Depth of Field.md",
+    "Part I/Cap 12",
+    "Part I/Cap 11",
+    "Part I/Cap 10/Snell's Law.md",
+    "Part I/Cap 10/Dielectrics.md",
+    "Part I/Cap 10",
+    "Part I/Cap 9/Multiple Materials.md",
+    "Part I/Cap 9/Metals.md",
+    "Part I/Cap 9",
+    "Part I/Cap 8/Rejection Method Reflections.md",
+    "Part I/Cap 8/Lambertian Reflections.md",
+    "Part I/Cap 8/Hemisphere Reflections.md",
+    "Part I/Cap 8/Diffuse Materials.md",
+    "Part I/Cap 8",
+    "Part I/Cap 7/Antialiasing.md",
+    "Part I/Cap 7",
+    "Part I/Cap 6/vector.md",
+    "Part I/Cap 6/shared_ptr.md",
+    "Part I/Cap 6/Normals.md",
+    "Part I/Cap 6/Hittable Objects & List of Hittable Objects.md",
+    "Part I/Cap 6/6.4 - Front Faces vs Back Faces Normal.md",
+    "Part I/Cap 6/6.2 - Simplifying the Ray-Sphere intersection code.md",
+    "Part I/Cap 6",
+    "Part I/Cap 5/Ray-Sphere Intersection.md",
+    "Part I/Cap 5",
+    "Part I/Cap 4/Rays.md",
+    "Part I/Cap 4/Lerp.md",
+    "Part I/Cap 4/4.2 - Sending Rays into the Scene.md",
+    "Part I/Cap 4",
+    "Part I/Cap 2/The PPM image format.md",
     "Cap 8/Diffuse Materials.md",
-    "Cap 10",
-    "Cap 8/Hemisphere Reflections.md",
-    "Cap 8/Rejection Method Reflections.md",
-    "Cap 8/Lambertian Reflections.md",
     "Cap 9/Multiple Materials.md",
     "Cap 9/Metals.md",
-    "Cap 6/6.4 - Front Faces vs Back Faces Normal.md",
-    "Cap 2/The PPM image format.md",
-    "Cap 9",
-    "Cap 8",
-    "Cap 7",
-    "Cap 2",
-    "Cap 6/shared_ptr.md",
-    "Cap 6/Hittable Objects & List of Hittable Objects.md",
-    "Cap 6/vector.md",
-    "Cap 6/Normals.md",
-    "Cap 6/6.1 - Shading with surface normals.md",
     "Pasted image 20230403220039.png",
-    "Cap 6/6.2 - Simplifying the Ray-Sphere intersection code.md",
-    "Cap 5/Ray-Sphere Intersection.md",
-    "Cap 5",
-    "Pasted image 20230403220304.png",
-    "Cap 4/Rays.md",
-    "Cap 6",
-    "Cap 4/4.2 - Sending Rays into the Scene.md",
-    "Cap 4",
-    "Cap 4/Lerp.md"
+    "Pasted image 20230403220304.png"
   ]
 }

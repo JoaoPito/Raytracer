@@ -1,0 +1,2 @@
+Depth of Field can be achieved by calculating the mean color of many rays emitted for the same pixel, but slightly changing the direction of each ray, the more you change it, more defocused the image will be, that means that changing how much each ray changes, we change the "aperture" of the camera.
+The focused part of the image is where all those rays intersect to the same point. It creates a 2d plane perpendicular to direction the camera is facing.

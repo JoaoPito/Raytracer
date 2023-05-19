@@ -13,3 +13,12 @@ To generate an image use the comand (On UNIX systems):
 ![A sample image from the last version](image.png)
 
 ![Another generated image :)](image02.png)
+
+### Resources
+
+**Raytracing in a weekend book series**, Peter Shirley
+- https://raytracing.github.io/books/RayTracingInOneWeekend.html
+- http://in1weekend.blogspot.com/
+
+**Motion Blur**
+- https://artis.inrialpes.fr/Enseignement/TRSA/CookDistributed84.pdf
